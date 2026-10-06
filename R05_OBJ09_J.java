@@ -19,11 +19,9 @@
  *
  ******************************************************************************/
 public class R05_OBJ09_J {
- // Determine whether object auth has required/expected class object
- if (auth.getClass().getName().equals(
-      "com.application.auth.DefaultAuthenticationHandler")) {
+ // Determine whether object auth has required/expected class name
+ if (auth.getClass() == com.application.auth.DefaultAuthenticationHandler.class) {
    // ...
 }
 
-  
 }
