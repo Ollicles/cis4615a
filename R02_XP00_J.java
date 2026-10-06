@@ -23,7 +23,7 @@
  *  %
  *
  ******************************************************************************/
-public class R02_XP00_J.java {
+public class R02_XP00_J {
       
   public static void main(String[] args) {
     deleteFile()
