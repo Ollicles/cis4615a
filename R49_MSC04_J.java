@@ -40,16 +40,20 @@ public class R49_MSC04_J {
     public class Leak {
     static Vector vector = new Vector();
   
-    public void useVector(int count) {    
-      for (int n = 0; n < count; n++) {
-        vector.add(Integer.toString(n));
+    public void useVector(int count) {
+      int n = 0;
+      try {
+        for (; n < count; n++) {
+          vector.add(Integer.toString(n));
+        }
+        // ...
+      } finally {
+        for (n = n - 1; n >= 0; n--) {
+          vector.removeElementAt(n);
+        }
       }
-      // ...
-      for (int n = count - 1; n > 0; n--) { // Free the memory
-        vector.removeElementAt(n);
-      }   
     }
-  
+
     public static void main(String[] args) throws IOException {
       Leak le = new Leak();
       int i = 1;
