@@ -3,7 +3,7 @@
  *  Execution:    java R00_IDS03_J
  *
  *  RULE 00 - INPUT VALIDATION AND DATA SANITIZATION (IDS)
- *     code example logs untrusted data from an unauthenticated user without data sanitization.
+ *     Do not log unsanitized user input
  *
  * Revision History:
  *   % java R00_IDS03_J
