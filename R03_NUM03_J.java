@@ -8,9 +8,8 @@
  * Revision History:
  *   % java R03_NUM03_J
  *  
-    import java.io.*
     public class R03_NUM03_J {
-          
+    
       public static int getInteger(DataInputStream is) throws IOException {
         return is.readInt();  
       }
@@ -19,7 +18,6 @@
  *  %
  *
  ******************************************************************************/
-import java.io.*
 public class R03_NUM03_J {
       
     public static long getInteger(DataInputStream is) throws IOException {
