@@ -35,7 +35,7 @@
  *
  ******************************************************************************/
 public class R01_DCL01_J {
-  class Vector {
+  class MyVector {
     private int val = 1;
   
     public boolean isEmpty() {
